@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="pixi.js"></script>
+        <script>
+            _renderer = PIXI.autoDetectRenderer(512, 512);
+            function init(){
+                document.body.appendChild(_renderer.view);
+                var pixiText = new PIXI.Text('This is a pixi text',{font : '24px Arial', fill : 0xff1010, align : 'center'});
+                _renderer.render(pixiText);
+            }
+        </script>
+    </head>
+    <body onload="init();">
+        <canvas id="test"></canvas>
+    </body>
+</html>
